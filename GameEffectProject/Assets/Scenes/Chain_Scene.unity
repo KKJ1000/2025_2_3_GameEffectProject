@@ -244,12 +244,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e9a66f1e27495459a43f7823f120a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  refreshRate: 0.01
-  maximumEnemiesInChain: 3
-  delayBetweenEachChain: 0.3
-  playerFirePoint: {fileID: 456859461}
-  playerEnemyDetector: {fileID: 102072367}
-  lineRendererPrefab: {fileID: 4029646961331128657, guid: d55562cb9ec237a44877263c6c3ef1ef,
+  _refreshRate: 0.01
+  _maximumEnemiesInChain: 3
+  _delayBetweenEachChain: 0.3
+  _playerFirePoint: {fileID: 456859461}
+  _playerEnemyDetector: {fileID: 102072367}
+  _lineRendererPrefab: {fileID: 6723929479118542858, guid: d55562cb9ec237a44877263c6c3ef1ef,
     type: 3}
 --- !u!114 &102072367
 MonoBehaviour:
@@ -263,8 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13defa2616662124dabb79ff3616f298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 10
-  enemyLayer:
+  _detectionRadius: 10
+  _enemyLayer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &430978009
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 430978010}
   - component: {fileID: 430978014}
   m_Layer: 6
-  m_Name: Cylinder (1)
+  m_Name: Enemy_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,8 +387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13defa2616662124dabb79ff3616f298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 10
-  enemyLayer:
+  _detectionRadius: 10
+  _enemyLayer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &456859460
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 456859463}
   - component: {fileID: 456859462}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,7 +510,7 @@ GameObject:
   - component: {fileID: 500760739}
   - component: {fileID: 500760743}
   m_Layer: 6
-  m_Name: Cylinder (2)
+  m_Name: Enemy_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -616,8 +616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13defa2616662124dabb79ff3616f298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 10
-  enemyLayer:
+  _detectionRadius: 10
+  _enemyLayer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &519670187
@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 1864367680}
   - component: {fileID: 1864367684}
   m_Layer: 6
-  m_Name: Cylinder
+  m_Name: Enemy_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1150,8 +1150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13defa2616662124dabb79ff3616f298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 10
-  enemyLayer:
+  _detectionRadius: 10
+  _enemyLayer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &2088682925
@@ -1168,7 +1168,7 @@ GameObject:
   - component: {fileID: 2088682926}
   - component: {fileID: 2088682930}
   m_Layer: 6
-  m_Name: Cylinder (3)
+  m_Name: Enemy_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1274,8 +1274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13defa2616662124dabb79ff3616f298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 10
-  enemyLayer:
+  _detectionRadius: 10
+  _enemyLayer:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1660057539 &9223372036854775807
@@ -1286,8 +1286,8 @@ SceneRoots:
   - {fileID: 989883971}
   - {fileID: 717839478}
   - {fileID: 519670191}
+  - {fileID: 102072365}
   - {fileID: 1864367683}
   - {fileID: 430978013}
   - {fileID: 500760742}
   - {fileID: 2088682929}
-  - {fileID: 102072365}

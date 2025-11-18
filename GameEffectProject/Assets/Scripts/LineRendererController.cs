@@ -1,21 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class LineRendererController : MonoBehaviour
 {
-    [SerializeField] List<LineRenderer> lineRenderers = new List<LineRenderer>();
+    [SerializeField] List<LineRenderer> _lineRenderers = new List<LineRenderer>();
 
     public void SetPosition(Transform startPps, Transform endPos)
     {
-        if (lineRenderers.Count > 0)
+        if (_lineRenderers.Count > 0)
         {
-            for (int i = 0; i < lineRenderers.Count; i++)
+            for (int i = 0; i < _lineRenderers.Count; i++)
             {
-                if (lineRenderers[i].positionCount >= 2)
+                if (_lineRenderers[i].positionCount >= 2)
                 {
-                    lineRenderers[i].SetPosition(0, startPps.position);
-                    lineRenderers[i].SetPosition(1, endPos.position);
+                    _lineRenderers[i].SetPosition(0, startPps.position);
+                    _lineRenderers[i].SetPosition(1, endPos.position);
                 }
             }
         }
